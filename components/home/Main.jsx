@@ -1,16 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-
 import React, { useState, useEffect, useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button, Container, Grid, Paper, Switch } from "@material-ui/core";
 import HomeItems from "./HomeItems.jsx";
-// import useStyles from "../../styles/style.jsx";
 import ImageCart from "../imageCard/ImageCard.jsx";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Head from "next/head";
 import Brightness4Icon from "@material-ui/icons/Brightness4";
 import ClockLoader from "react-spinners/ClockLoader";
-import { Typography } from "@material-ui/core";
 import Tooltip from "@material-ui/core/Tooltip";
 import { ThemeProvider, createTheme } from "@material-ui/core/styles";
 import { Store } from "../../utils/store.jsx";

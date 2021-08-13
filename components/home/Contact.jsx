@@ -146,6 +146,11 @@ export default function Contact() {
                 type="submit"
                 fullWidth
                 color="primary"
+                style={{
+                  border: "none",
+                  outline: "none",
+                  textDecoration: "none",
+                }}
               >
                 Send
               </Button>
