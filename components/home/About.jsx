@@ -11,15 +11,7 @@ export default function About() {
         <Grid container spacing={1}>
           <Grid item md={6} xs={6}>
             <Typography color="primary" variant="h6" className="pt-sm-5 ">
-              <span
-              // style={{
-              //   backgroundColor: "#fff",
-              //   padding: "3px",
-              //   borderRadius: "2px",
-              // }}
-              >
-                About
-              </span>
+              <span>About</span>
             </Typography>
           </Grid>
           <Grid item md={6} xs={6}>

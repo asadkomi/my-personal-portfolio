@@ -88,7 +88,14 @@ export default function ImageCart() {
             textDecoration: "none",
           }}
         >
-          <LinkedInIcon color="primary" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/asadkomi/"
+            passHref
+          >
+            <LinkedInIcon color="primary" />
+          </a>
         </IconButton>
         <IconButton
           aria-label="share"
@@ -98,17 +105,14 @@ export default function ImageCart() {
             textDecoration: "none",
           }}
         >
-          <GitHubIcon color="primary" />
-        </IconButton>
-        <IconButton
-          aria-label="share"
-          style={{
-            border: "none",
-            outline: "none",
-            textDecoration: "none",
-          }}
-        >
-          <TwitterIcon color="primary" />
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/asadkomi"
+            passHref
+          >
+            <GitHubIcon color="primary" />
+          </a>
         </IconButton>
       </CardActions>
     </Card>

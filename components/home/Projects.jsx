@@ -13,6 +13,7 @@ import {
   CardContent,
   CardActions,
   Paper,
+  Button,
 } from "@material-ui/core";
 import IconButton from "@material-ui/core/IconButton";
 import LaunchIcon from "@material-ui/icons/Launch";
@@ -49,6 +50,7 @@ export default function Projects() {
   const [nine, setNine] = useState("");
   const [ten, setTen] = useState("");
   const [img, setImg] = useState("");
+  const [link, setLink] = useState("");
 
   const handleOpen = () => {
     setOpen(true);
@@ -71,6 +73,7 @@ export default function Projects() {
       setNine("Github - Vercel");
       setTen("Others");
       setImg("/images/eCom.png");
+      setLink("https://shoes-store-ten.vercel.app/");
     } else {
       setTitle("Booking Application");
       setOne("NextJs");
@@ -84,6 +87,7 @@ export default function Projects() {
       setNine("Github - Vercel");
       setTen("Others");
       setImg("/images/booking.png");
+      setLink("https://hotel-app-komi.vercel.app/");
     }
     handleOpen();
   };
@@ -119,7 +123,7 @@ export default function Projects() {
               </CardContent>
             </CardActionArea>
             <CardActions align="center">
-              <IconButton
+              {/* <IconButton
                 color="primary"
                 aria-label="github"
                 style={{
@@ -129,7 +133,7 @@ export default function Projects() {
                 }}
               >
                 <GitHubIcon />
-              </IconButton>
+              </IconButton> */}
               <IconButton
                 aria-label="launch"
                 color="primary"
@@ -139,7 +143,14 @@ export default function Projects() {
                   textDecoration: "none",
                 }}
               >
-                <LaunchIcon />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://shoes-store-ten.vercel.app/"
+                  passHref
+                >
+                  <LaunchIcon />
+                </a>
               </IconButton>
             </CardActions>
           </Paper>
@@ -174,7 +185,14 @@ export default function Projects() {
                   textDecoration: "none",
                 }}
               >
-                <GitHubIcon />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/asadkomi/hotel-app"
+                  passHref
+                >
+                  <GitHubIcon />
+                </a>
               </IconButton>
               <IconButton
                 aria-label="launch"
@@ -185,7 +203,14 @@ export default function Projects() {
                   textDecoration: "none",
                 }}
               >
-                <LaunchIcon />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://hotel-app-komi.vercel.app/"
+                  passHref
+                >
+                  <LaunchIcon />
+                </a>
               </IconButton>
             </CardActions>
           </Paper>
@@ -244,7 +269,9 @@ export default function Projects() {
                 </Grid>
               </CardContent>
             </CardActionArea>
-            <LaunchIcon color="primary" />
+            <a target="_blank" rel="noreferrer" href={link} passHref>
+              <LaunchIcon color="primary" />
+            </a>
           </div>
         </Fade>
       </Modal>
