@@ -110,40 +110,38 @@ export default function Main() {
           </div>
         </div>
       ) : (
-        <Paper>
-          <Container fixed>
-            <Grid container spacing={3}>
-              <Grid item xs={12} sm={6} md={4} lg={4}>
-                <ImageCart />
-              </Grid>
-              <Grid item xs={12} sm={6} md={8} lg={8}>
-                <Grid container>
-                  <Grid item xs>
-                    <HomeItems />
-                  </Grid>
+        <Container fixed>
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={6} md={4} lg={4}>
+              <ImageCart />
+            </Grid>
+            <Grid item xs={12} sm={6} md={8} lg={8}>
+              <Grid container>
+                <Grid item xs>
+                  <HomeItems />
                 </Grid>
               </Grid>
-              <div className={classes.root}>
-                <Button
-                  style={{
-                    border: "none",
-                    outline: "none",
-                    textDecoration: "none",
-                  }}
-                >
-                  <Tooltip title="Swich Mode" aria-label="swich-mode">
-                    <Brightness4Icon
-                      color="primary"
-                      fontSize="large"
-                      checked={darkMode}
-                      onClick={darkModeHandler}
-                    ></Brightness4Icon>
-                  </Tooltip>
-                </Button>
-              </div>
             </Grid>
-          </Container>
-        </Paper>
+            <div className={classes.root}>
+              <Button
+                style={{
+                  border: "none",
+                  outline: "none",
+                  textDecoration: "none",
+                }}
+              >
+                <Tooltip title="Swich Mode" aria-label="swich-mode">
+                  <Brightness4Icon
+                    color="primary"
+                    fontSize="large"
+                    checked={darkMode}
+                    onClick={darkModeHandler}
+                  ></Brightness4Icon>
+                </Tooltip>
+              </Button>
+            </div>
+          </Grid>
+        </Container>
       )}
     </ThemeProvider>
   );
