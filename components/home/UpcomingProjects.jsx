@@ -94,9 +94,6 @@ export default function UpcommingProjects() {
     handleOpen();
   };
 
-  const data = {
-    title: "Technologies used",
-  };
   return (
     <div>
       <Typography color="primary" variant="h6" className="pt-5 pb-1">
