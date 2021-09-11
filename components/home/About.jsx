@@ -60,24 +60,24 @@ export default function About() {
         <Typography
           style={{ borderLeft: "1px solid #ef6c00", paddingLeft: "20px" }}
         >
-          <b> Kirkwood Community College</b> |{" "}
-          <span style={{ fontSize: "14px" }}>Cedar Rapids, IA</span>
-          <br />
-          <Typography style={{ fontSize: "14px" }}>
-            Applied Science
-            <br /> Graduation - May 2020
-          </Typography>
-        </Typography>
-        <div className="pb-3"> </div>
-        <Typography
-          style={{ borderLeft: "1px solid #ef6c00", paddingLeft: "20px" }}
-        >
           <b> Iowa State University</b> |{" "}
           <span style={{ fontSize: "14px" }}>Ames, IA</span>
           <br />
           <Typography style={{ fontSize: "14px" }}>
             Bachelor of Science in Software Engineering
             <br /> Expected Graduation - May 2023
+          </Typography>
+        </Typography>
+        <div className="pb-3"> </div>
+        <Typography
+          style={{ borderLeft: "1px solid #ef6c00", paddingLeft: "20px" }}
+        >
+          <b> Kirkwood Community College</b> |{" "}
+          <span style={{ fontSize: "14px" }}>Cedar Rapids, IA</span>
+          <br />
+          <Typography style={{ fontSize: "14px" }}>
+            Applied Science
+            <br /> Graduation - May 2020
           </Typography>
         </Typography>
       </Fade>
