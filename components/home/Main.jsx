@@ -51,7 +51,7 @@ export default function Main() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 1000);
   }, []);
 
   const darkModeHandler = () => {

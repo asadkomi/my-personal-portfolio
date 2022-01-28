@@ -6,7 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import NextLink from "next/link";
-import { CardActionArea, CardMedia, Divider } from "@material-ui/core";
+import { CardActionArea, CardMedia, Divider, Paper } from "@material-ui/core";
 import MailIcon from "@material-ui/icons/Mail";
 import PhoneIcon from "@material-ui/icons/Phone";
 import RoomIcon from "@material-ui/icons/Room";
@@ -36,7 +36,7 @@ export default function ImageCart() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root} elevation={1}>
+    <Paper className={classes.root} elevation={1}>
       <CardActionArea
         style={{
           border: "none",
@@ -115,6 +115,6 @@ export default function ImageCart() {
           </a>
         </IconButton>
       </CardActions>
-    </Card>
+    </Paper>
   );
 }
